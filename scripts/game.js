@@ -120,7 +120,7 @@ function selectGameField(event){
 
 
     gameData[selectedRow][selectedColumn]=activePlayer
-    if(checkRow(selectedRow) ||heckCol(selectedColumn)|| checkDiagonal() ){
+    if(checkRow(selectedRow) ||checkCol(selectedColumn)|| checkDiagonal() ){
         winner=activePlayer;
         gameIsFinished=true;/////---extra 
     }
